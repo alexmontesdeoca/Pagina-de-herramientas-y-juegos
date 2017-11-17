@@ -1,0 +1,160 @@
+
+
+
+
+.casilla[data-value="x"] {
+
+  background: #36cc3c;
+
+  font-size: 50px
+  font-weight: 900;
+  height: 50px;
+  width: 50px;
+
+}
+
+.casilla[data-value="o"] {
+
+
+  background: #3F51B5;
+  font-size: 50px
+  font-weight: 900;
+  height: 50px;
+  width: 50px;
+
+
+}
+
+
+.casilla[data-value=""]
+
+{
+
+  background: gray;
+  height: 50px;
+  width: 50px;
+
+}
+
+.casilla[data-value=""]:hover
+
+{
+
+  background: white;
+  height: 50px;
+  width: 50px;
+
+
+}
+
+.casilla {
+    border: solid 1px black;
+    margin-left: 4px;
+    margin-top: 2px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+
+
+button[data-value="x"]:after {
+  content:"\f00d";
+  font-family: "FontAwesome";
+  visibility: visible;
+  display: block;
+  position: absolute;
+  background-color: gray;
+  top: 0;
+  left: 0;
+
+ height: 100%;
+ width: 100%;
+ line-height: 50px;
+ text-align: center;
+}
+
+button[data-value="o"]:after {
+  content:"\f10c";
+  font-family: "FontAwesome";
+  visibility: visible;
+  display: block;
+  position: absolute;
+  background-color: white;
+  top: 0;
+  left: 0;
+
+ height: 100%;
+ width: 100%;
+ line-height: 50px;
+ text-align: center;
+}
+
+
+
+.tableroPuntuacion{
+
+
+  background: blue;
+  color: black;
+}
+
+
+
+
+#reniciar{
+
+
+         font-family: Impact;
+         width: 162px;
+
+}
+
+.contenedor-boton,.contenedor-tabla{
+
+margin-top: 85px;
+
+}
+
+
+footer{
+
+  background: black;
+  height:100%;
+  padding: 25px;
+
+}
+
+
+p{ font-size: 20px;}
+
+
+
+.jugar{
+
+    font-family:Verdana;
+    color: orange;
+
+
+}
+
+h2{
+
+  margin-bottom: 15px;
+}
+
+
+
+.btn{
+
+cursor: pointer;
+
+}
+
+.juegos{
+  color: green;
+  font-family: Arial Black;
+
+
+
+}

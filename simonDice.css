@@ -1,0 +1,149 @@
+body
+{
+
+  margin: 0 auto;
+  background: #EFF8E2;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+ 
+
+}
+
+
+footer{
+
+
+  width: 100%;
+  background: #D9DBBC;
+  height: 50px;
+
+  min-width: 1000px;
+ position: fixed;
+bottom: 0px;
+
+}
+
+html{
+
+width: 100%;
+height:100%;  
+ margin: 0;
+ max-height: 650px;
+
+}
+
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid transparent;
+    min-width: 1000px;
+    font-family: Impact;
+}
+
+.jugar{
+
+    font-family:Verdana;
+    color: orange;
+
+
+}
+
+.juegos{
+  color: green;
+  font-family: Arial Black;
+
+
+
+}
+
+.contenedorBotones{
+
+position: relative;
+width: auto;
+height: 300px;
+margin: 0 auto;
+top: 80px;
+left: 380px;
+
+}
+
+button {
+
+
+  display: block;
+  position: absolute;
+}
+
+.verde{
+
+  background: #43ce43;
+  width: 250px;
+  height: 80px;
+  border-radius: 20px;
+  
+  
+}
+
+.rojo{
+
+  background:#a71919;
+  width: 250px;
+  height: 80px;
+  border-radius: 20px;
+  left: 350px;
+  
+}
+
+.azul{
+
+  background: #121275;
+  width: 250px;
+  height: 80px;
+  top:250px;
+  border-radius: 20px;
+  left: 350px;
+
+}
+
+.amarillo{
+
+  background: #b1b11e;
+  width: 250px;
+  height: 80px;
+  top: 250px;
+  border-radius: 20px;
+  
+
+}
+
+   .estilo_botones{
+          border:1px solid #7d99ca; 
+          font-family:arial, helvetica, sans-serif; 
+          padding: 10px 10px 10px 10px; 
+          text-shadow: -1px -1px 0 rgba(0,0,0,0.3); 
+          font-weight:bold; text-align: center; 
+          color: #F1F2FB;
+          background-color: #0B1387; 
+          height: 35px; 
+          width: 145px
+          text-align: center;
+          }
+ 
+    .center
+            {
+ 
+            margin:auto;
+            text-align: center;
+            }
+
+    .btn-success{
+
+
+              position: absolute;
+             margin-left: 259px;
+             margin-top: 149px;
+             border-radius: 20px; 
+    }
