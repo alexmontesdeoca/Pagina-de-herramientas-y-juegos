@@ -1,85 +1,299 @@
-<!DOCTYPE html>
-<html>
-<head>
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>GAMER KNIGHT</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<meta charset="utf-8">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="calcular.css">
+		<link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<link rel="stylesheet" href="css/font-awesome.min.css">
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-<!-- al theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+      <div  class="container">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<link rel="stylesheet" type="text/css" href="calcular.css">
-
-	<title>juegos</title>
-
-</head>
-<body>
-
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-<a class="navbar-brand" href="#"><span class="jugar">Jugar</span><span class="juegos">Juegos</span></a>    
+        <div class="logo">
+  <a class="navbar-brand" href="#"><img src="icono.png" width="70px"></a>
+  <p>GAMER KNIGHT</p>
 </div>
-    <ul class="nav navbar-nav">
-      <li ><a href="#">Inicio</a></li>
-      <li><a href="index.html">Tateti</a></li>
-      <li class="active"><a href="calculador.html">Calculador de áreas</a></li> 
-      <li><a href="dados.html">Dados</a></li> 
-      <li><a href="SimonDice.html">SimonDice</a></li> 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+
+
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">INICIO <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="productos.html">PRODUCTOS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contacto.html">CONTACTO</a>
+      </li>
+
     </ul>
-  </div>
+
+</div>
+</div>
 </nav>
-<div class="contenedorTodo">
-<h2>Calcular área figuras geométricas</h2><br>
-<div class="contenedorColumna_1">
+	<h1>Calcular área figuras geométricas</h1>
+<div class="container">
 
-<div class="contenedorTriangulo"><label>Triángulo Base:</label><input  name="input" type="number" min="0" id="baseTriangulo"> </div>
+	<h2>Triángulo</h2>
+	<div class="row">
 
-<div><label>Cuadrado Lado:</label><input name="input" type="number" min="0" id="ladoCuadrado"></div>
-<div><label>Pentagono Lado:</label><input name="input"  type="number" min="0" id="ladoPentagono"></div>
-<div><label>Hexagono Lado:</label><input  name="input" type="number" min="0" id="hexagonoLado"></div>
-<div><label>Cilindro Radio:</label><input  name="input" type="number" min="0" id="radioCilindro"></div>  
-<div><label>Cono <br>Radio:</label><input  name="input" type="number" min="0" id="radioCono"></div>
-<div id="contenedorCirculo"><label>Circulo Radio:</label><input name="input" type="number" min="0" id="radioCirculo"><div id="contenedorresultadoCirculo">
-<input type="button" id="calcularCirculo" class="btn btn-success" value="Calcular"><span id="resultadoCirculo"></span></div></div>
+<div class="col-md-5">
 
-<div id="contenedorCubo"><label>Cubo Lado:</label><input name="input" type="number" min="0" id="ladoCubo"><div id="contenedorresultadoCubo">
-<input type="button" id="calcularCubo" class="btn btn-success" value="Calcular"><span id="resultadoCubo"></span></div></div>
+<input type="number" placeholder="Base" class="form-control" min="0" id="baseTriangulo">
+
+</div>
+<div class="col-md-5">
+
+<input class="form-control" placeholder="Altura" name="input" id="alturaTriangulo" type="number" min="0">
+
+
+
+
+</div>
+<div class="col-md-2">
+
+<button id="calcularTriangulo" class="btn btn-primary">Calcular</button>
+<span id="resultadoTriangulo"></span>
 
 </div>
 
-<div class="contenedorColumna_2">
-<div><label>Altura:</label><input  name="input" id="alturaTriangulo" type="number" min="0"><div id="contenedorresultadoTriangulo">
-<input type="button" id="calcularTriangulo" class="btn btn-success" value="Calcular"><span id="resultadoTriangulo"></span></div></div>
+</div>
 
+<h2>Cuadrado</h2>
+<div class="row">
 
+<div class="col-md-5">
 
-<div><label>Lado:</label><input name="input" type="number" min="0" id="ladoCuadrado2"><div id="contenedorresultadoCuadrado">
-<input type="button" id="calcularCuadrado" class="btn btn-success" value="Calcular"><span id="resultadoCuadrado"></span></div></div>
-
-<div><label>Apotema:</label><input name="input" type="number" min="0" id="apotemaPentagono"><div id="contenedorresultadoPentagono">
-<input type="button" id="calcularPentagono" class="btn btn-success" value="Calcular"><span id="resultadoPentagono"></span></div></div> 
-
-
-<div><label>Apotema:</label><input name="input" type="number" min="0" id="hexagonoApotema"><div id="contenedorresultadoHexagono">
-<input type="button" id="calcularHexagono" class="btn btn-success" value="Calcular"><span id="resultadoHexagono"></span></div></div>
-
-
-<div><label>Altura:</label><input name="input" type="number" min="0" id="alturaCilindro"><div id="contenedorresultadoCilindro">
-<input type="button" id="calcularCilindro" class="btn btn-success" value="Calcular"><span id="resultadoCilindro"></span></div></div> 
-
-<div><label>Generatriz:</label><input name="input" type="number" min="0" id="generatrizCono"><div id="contenedorresultadoCono">
-<input type="button" id="calcularCono" class="btn btn-success" value="Calcular"><span id="resultadoCono"></span></div></div> 
+<input placeholder="Lado" type="number" class="form-control" min="0" id="ladoCuadrado">
 
 </div>
-<script type="text/javascript" src="calcular.js"></script>
-</body>
-<footer class="text-center">©copyright 2016</footer>
+<div class="col-md-5">
+
+	<input placeholder="Lado" name="input" class="form-control" type="number" min="0" id="ladoCuadrado2">
+
+
+
+
+</div>
+<div class="col-md-2">
+
+<button id="calcularCuadrado" class="btn btn-primary">Calcular</button>
+	<span id="resultadoCuadrado"></span>
+
+</div>
+
+</div>
+
+
+
+<h2>Pentagono</h2>
+<div class="row">
+
+<div class="col-md-5">
+
+<input type="number" placeholder="Lado" class="form-control" min="0" id="ladoPentagono">
+
+</div>
+<div class="col-md-5">
+
+	<input name="input" placeholder="Apotema" class="form-control" type="number" min="0" id="apotemaPentagono">
+
+
+
+
+
+</div>
+<div class="col-md-2">
+
+<button id="calcularPentagono" class="btn btn-primary">Calcular</button>
+<span id="resultadoPentagono"></span>
+
+</div>
+
+</div>
+
+
+<h2>Hexagono</h2>
+<div class="row">
+
+<div class="col-md-5">
+
+<input type="number" placeholder="Lado" class="form-control" min="0" id="hexagonoLado">
+
+</div>
+<div class="col-md-5">
+
+<input name="input" placeholder="Apotema" class="form-control" type="number" min="0" id="hexagonoApotema">
+
+
+
+
+
+
+</div>
+<div class="col-md-2">
+
+<button id="calcularHexagono" class="btn btn-primary">Calcular</button>
+<span id="resultadoHexagono"></span>
+
+</div>
+
+</div>
+
+<h2>Cilindro</h2>
+<div class="row">
+
+<div class="col-md-5">
+
+<input type="number" placeholder="Radio" class="form-control" min="0" id="radioCilindro">
+
+</div>
+<div class="col-md-5">
+
+<input name="input" placeholder="Altura" class="form-control" type="number" min="0" id="alturaCilindro">
+
+
+
+
+
+
+</div>
+<div class="col-md-2">
+
+<button id="calcularCilindro" class="btn btn-primary">Calcular</button>
+<span id="resultadoCilindro"></span>
+
+</div>
+
+</div>
+
+
+
+<h2>Cono</h2>
+<div class="row">
+
+<div class="col-md-5">
+
+<input type="number" placeholder="Radio" class="form-control" min="0" id="radioCono">
+
+</div>
+<div class="col-md-5">
+
+<input name="input" placeholder="Generatriz" class="form-control" type="number" min="0" id="generatrizCono">
+
+
+
+
+
+
+</div>
+<div class="col-md-2">
+
+<button id="calcularCono" class="btn btn-primary">Calcular</button>
+<span id="resultadoCono"></span>
+
+</div>
+
+</div>
+
+<h2>Cubo</h2>
+<div class="row">
+
+<div class="col-md-6">
+
+<input type="number" placeholder="Lado" class="form-control" min="0" id="ladoCubo">
+
+</div>
+<div class="col-md-6">
+
+<button id="calcularCubo" class="btn btn-primary">Calcular</button>
+<span id="resultadoCubo"></span>
+
+</div>
+
+</div>
+
+
+<h2>Circulo</h2>
+<div class="row">
+
+<div class="col-md-6">
+
+<input type="number" placeholder="Lado" class="form-control" min="0" id="radioCirculo">
+
+</div>
+<div class="col-md-6">
+
+<button id="calcularCirculo" class="btn btn-primary">Calcular</button>
+<span id="resultadoCirculo"></span>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+
+
+
+		<footer>
+		<div class="container">
+		  <div class="row">
+
+		    <div class="col-md-12">
+
+		      <div class="copyrigth">
+
+		        <p>
+
+		          Todos los derechos reservados 2017©
+
+
+		        </p>
+
+		      </div>
+
+		    </div>
+
+
+
+
+		    </div>
+
+
+
+
+		</div>
+
+		</footer>
+
+
+<!--fin footer-->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="calcular.js"></script>
+  </body>
 </html>

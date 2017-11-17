@@ -4,7 +4,7 @@ let seleccionador = document.getElementById("sel1");
 let resultado = document.getElementById("resultado");
 let calcular = document.getElementById("calcular");
 let baseTriangulo = document.getElementById("baseTriangulo");
-let alturaTriangulo = document.getElementById("alturaTriangulo"); 
+let alturaTriangulo = document.getElementById("alturaTriangulo");
 let ladoCuadrado1 = document.getElementById("ladoCuadrado");
 let ladoCuadrado2 = document.getElementById("ladoCuadrado2");
 let ladoPentagono = document.getElementById("ladoPentagono");
@@ -67,7 +67,7 @@ function validacion(valor1,valor2,operacion,nameResultado){
 
 if(valor1 != "" && valor2 != ""){
 
-			
+
 			nameResultado.innerHTML = "";
 			nameResultado.style.color = "black";
 			nameResultado.style.display = "inline-block";
@@ -174,28 +174,6 @@ validacion(ladoCubo.value,1,6*(ladoCubo.value*ladoCubo.value),resultadoCubo);
 
 
 })
-
-
-/*calcular.addEventListener("click",function(){
-
-
-
-validacion(baseTriangulo.value,alturaTriangulo.value,(baseTriangulo.value*alturaTriangulo.value)/2 );
-validacion(ladoCuadrado1.value,ladoCuadrado2.value,(ladoCuadrado1.value*ladoCuadrado2.value));
-validacion(ladoPentagono.value,apotemaPentagono.value,((5*ladoPentagono.value)*apotemaPentagono.value)/2);
-validacion(radioCirculo.value,1,3.14*radioCirculo.value);
-validacion(hexagonoApotema.value,hexagonoLado.value,((6*hexagonoLado.value)*hexagonoApotema.value));
-validacion(radioCilindro.value,alturaCilindro.value,2*3.14*radioCilindro.value*(radioCilindro.value+alturaCilindro.value));
-validacion(radioCono.value,generatrizCono.value,3.14*radioCono.value*(generatrizCono.value+radioCono.value));
-validacion(ladoCubo.value,1,6*(ladoCubo.value*ladoCubo.value));
-validacionInput(baseTriangulo.value,alturaTriangulo.value);
-validacionInput(ladoCuadrado1.value,ladoCuadrado2.value);
-validacionInput(ladoPentagono.value,apotemaPentagono.value);
-validacionInput(hexagonoApotema.value,hexagonoLado.value);
-validacionInput(radioCilindro.value,alturaCilindro.value);
-validacionInput(radioCono.value,generatrizCono.value);
-
-})*/
 
 
 }
