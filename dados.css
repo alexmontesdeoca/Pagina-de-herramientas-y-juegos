@@ -1,45 +1,41 @@
-body
-{
-
-  margin: 0 auto;
-  background: #EFF8E2;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
- 
-
-}
 
 footer{
 
-
-  width: 100%;
-  background: #D9DBBC;
-  height: 50px;
-
-  min-width: 1000px;
- position: fixed;
-bottom: 0px;
+  background: black;
+  height:100%;
+  padding: 25px;
 
 }
 
-html{
 
-width: 100%;
-height:100%;	
- margin: 0;
- max-height: 650px;
+p{ font-size: 20px;}
+
+
+h2{
+
+  margin-bottom: 15px;
+}
+
+
+
+.btn{
+
+cursor: pointer;
 
 }
 
-.navbar {
-    position: relative;
-    min-height: 50px;
-    margin-bottom: 20px;
-    width: 100%;
-    border: 1px solid transparent;
-    min-width: 1000px;
-    font-family: Impact;
+.area {
+
+
+	font-family:Impact ;
+	color: red;
+}
+
+option{
+
+
+	color: red;
+	font-family: Impact;
 }
 
 .jugar{
@@ -56,44 +52,4 @@ height:100%;
 
 
 
-}
-
-.contenedorDados {
-    top: 200px;
-    position: relative;
-    margin: 0 auto;
-    left: 350px;
-    width: 100%;
-    display: inline;
-}
-
-
-.apuesta{
-
-
-    margin-left: 15px;
-    position: absolute;
-    left: 10px;
-    height: 26px;
-    top: 30px;
-    width: 155px;
-
-}
-
-.btn{
-
-
-    margin-left: 15px;
-    position: absolute;
-    left: 170px;
-    height: 26px;
-    padding: 0;
-    top:30px;
-}
-
-.contenedorTirar{
-
-
-	position: relative;
-	top: 241px;
 }
